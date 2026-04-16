@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie R. Paragas - Curriculum Vitae</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e2e8f0; /* Slate 200 */
+            color: #1e293b; /* Slate 800 */
+        }
+        /* Print Styles to ensure background colors and layout persist */
+        @media print {
+            @page { margin: 0; size: auto; }
+            body { background-color: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .cv-container { box-shadow: none !important; margin: 0 !important; width: 100% !important; max-width: 100% !important; border-radius: 0 !important; }
+            .page-break-inside-avoid { break-inside: avoid; }
+            ::-webkit-scrollbar { display: none; }
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3rem;
+            height: 0.25rem;
+            background-color: #f59e0b; /* Amber 500 */
+            border-radius: 0.125rem;
+        }
+    </style>
+</head>
+<body class="py-10 print:py-0 text-slate-800">
+
+    <!-- CV Container -->
+    <div class="cv-container max-w-[1100px] mx-auto bg-white shadow-2xl rounded-xl overflow-hidden print:shadow-none print:rounded-none">
+        
+        <!-- Header Section -->
+        <header class="bg-slate-900 text-white p-10 md:px-14 relative overflow-hidden flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+            <!-- Decorative background elements -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-slate-800 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-amber-900 rounded-full mix-blend-multiply filter blur-3xl opacity-30 transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+            <div class="flex-1 text-center md:text-left z-10">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight mb-2 text-white">
+                    Jessie R. <span class="text-amber-400">Paragas</span>
+                </h1>
+                
+                <!-- Highlighted Rank Badge -->
+                <div class="inline-flex items-center mt-3 mb-6 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 px-5 py-2.5 rounded shadow-lg">
+                    <i data-lucide="award" class="w-6 h-6 mr-2 stroke-[2.5]"></i>
+                    <span class="text-xl md:text-2xl font-bold uppercase tracking-widest">Associate Professor V</span>
+                </div>
+
+                <!-- Contact Info Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-sm md:text-base font-medium text-slate-300 mt-2">
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-amber-400 shrink-0"></i>
+                        <span>Tacloban City</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <i data-lucide="phone" class="w-5 h-5 text-amber-400 shrink-0"></i>
+                        <span>09450714302</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <i data-lucide="mail" class="w-5 h-5 text-amber-400 shrink-0"></i>
+                        <a href="mailto:jessie.paragas@evsu.edu.ph" class="hover:text-amber-300 transition-colors">jessie.paragas@evsu.edu.ph</a>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <i data-lucide="mail" class="w-5 h-5 text-amber-400 shrink-0"></i>
+                        <a href="mailto:alphaphidang@gmail.com" class="hover:text-amber-300 transition-colors">alphaphidang@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="z-10 shrink-0">
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-2xl border-4 border-slate-700 overflow-hidden bg-slate-800 flex items-center justify-center shadow-xl rotate-3 hover:rotate-0 transition-transform duration-300">
+                    <!-- Replace the icon below with an <img> tag if you have a photo URL -->
+                    <!-- <i data-lucide="user" class="w-24 h-24 text-slate-500"></i> -->
+                     
+                     <img 
+                        src="image.png" 
+                        alt="photo" 
+                        class="w-full h-full object-cover object-[60%_20%]"
+                     >
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="flex flex-col md:flex-row bg-white">
+            
+            <!-- Left Column (Narrower) -->
+            <div class="w-full md:w-[35%] bg-slate-50 p-8 md:p-10 border-r border-slate-200 flex flex-col gap-10">
+                
+                <!-- Education Section -->
+                <section class="page-break-inside-avoid">
+                    <h2 class="text-2xl font-bold text-slate-900 section-header flex items-center gap-2">
+                        <i data-lucide="graduation-cap" class="w-6 h-6 text-slate-700"></i> Education
+                    </h2>
+                    <div class="flex flex-col gap-6 relative">
+                        <!-- Timeline Line -->
+                        <div class="absolute left-[7px] top-2 bottom-2 w-0.5 bg-slate-200"></div>
+                        
+                        <div class="relative pl-6">
+                            <div class="absolute w-4 h-4 bg-amber-400 border-4 border-slate-50 rounded-full -left-[1px] top-1"></div>
+                            <p class="text-xs font-bold text-slate-500 mb-1 uppercase tracking-wider">October 2019</p>
+                            <h3 class="text-base font-bold text-slate-900 leading-tight">Doctor in Information Technology</h3>
+                            <p class="text-slate-600 text-sm mt-1">Technological Institute of the Philippines – Quezon City Campus</p>
+                        </div>
+                        
+                        <div class="relative pl-6">
+                            <div class="absolute w-4 h-4 bg-amber-400 border-4 border-slate-50 rounded-full -left-[1px] top-1"></div>
+                            <p class="text-xs font-bold text-slate-500 mb-1 uppercase tracking-wider">March 2011</p>
+                            <h3 class="text-base font-bold text-slate-900 leading-tight">Master of Science in Information Technology</h3>
+                            <p class="text-slate-600 text-sm mt-1">Eastern Visayas State University</p>
+                        </div>
+
+                        <div class="relative pl-6">
+                            <div class="absolute w-4 h-4 bg-amber-400 border-4 border-slate-50 rounded-full -left-[1px] top-1"></div>
+                            <p class="text-xs font-bold text-slate-500 mb-1 uppercase tracking-wider">May 2002</p>
+                            <h3 class="text-base font-bold text-slate-900 leading-tight">Bachelor of Science in Information Technology</h3>
+                            <p class="text-slate-600 text-sm mt-1">Leyte Institute of Technology</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Affiliations -->
+                <section class="page-break-inside-avoid">
+                    <h2 class="text-2xl font-bold text-slate-900 section-header flex items-center gap-2">
+                        <i data-lucide="users" class="w-6 h-6 text-slate-700"></i> Affiliations
+                    </h2>
+                    <ul class="flex flex-col gap-3 text-sm text-slate-700">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2024 – Present:</span> Sigma Journal of Engineering and Natural Sciences (Reviewer)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2022 – Present:</span> National Research Council of the Philippines (Associate Member)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2021 – Present:</span> Isabela State University Linker: Journal of Engineering, Computing and Technology (Associate Editor)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2021 – Present:</span> University of Bohol Multidisciplinary Research Journal (External Referee)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2020 – Present:</span> Department Of Information and Communications Technology (Trainer)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2019 – Present:</span> Asian Society of Teachers for Research (Regular Member)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2017 – Present:</span> International Association of Engineers (Member)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2015 – Present:</span> Regional Quality Assessment Team (RQAT) for Information Technology Education</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2015 – 2020:</span> Philippine Society of Information Technology Educators (Member)</div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <div><span class="font-bold text-slate-900">2013 – Present:</span> Philippine Schools, Universities, and Colleges Computer Education and Systems Society (Member)</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Publications -->
+                <section class="page-break-inside-avoid">
+                    <h2 class="text-2xl font-bold text-slate-900 section-header flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-6 h-6 text-slate-700"></i> Publications
+                    </h2>
+                    <div class="flex flex-col gap-4">
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57211434442" target="_blank" class="group flex flex-col p-3 rounded-lg border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition-all">
+                            <span class="font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Scopus</span>
+                            <span class="text-xs text-slate-500 truncate mt-1">View Author Profile &rarr;</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=aEr1DSYAAAAJ" target="_blank" class="group flex flex-col p-3 rounded-lg border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition-all">
+                            <span class="font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Google Scholar</span>
+                            <span class="text-xs text-slate-500 truncate mt-1">View Citations &rarr;</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0001-6802-359X" target="_blank" class="group flex flex-col p-3 rounded-lg border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition-all">
+                            <span class="font-bold text-slate-900 group-hover:text-amber-600 transition-colors">ORCID</span>
+                            <span class="text-xs text-slate-500 truncate mt-1">0000-0001-6802-359X &rarr;</span>
+                        </a>
+                        <a href="https://publons.com/researcher/3333216/jessie-paragas/" target="_blank" class="group flex flex-col p-3 rounded-lg border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition-all">
+                            <span class="font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Web of Science</span>
+                            <span class="text-xs text-slate-500 truncate mt-1">View Researcher Profile &rarr;</span>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Jessie-Paragas-2" target="_blank" class="group flex flex-col p-3 rounded-lg border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition-all">
+                            <span class="font-bold text-slate-900 group-hover:text-amber-600 transition-colors">ResearchGate</span>
+                            <span class="text-xs text-slate-500 truncate mt-1">View Research Profile &rarr;</span>
+                        </a>                        
+                    </div>
+                </section>
+
+                <!-- References -->
+                <section class="page-break-inside-avoid">
+                    <h2 class="text-2xl font-bold text-slate-900 section-header flex items-center gap-2">
+                        <i data-lucide="link" class="w-6 h-6 text-slate-700"></i> References
+                    </h2>
+                    <div class="flex flex-col gap-5">
+                        <div class="bg-white p-4 rounded-lg border border-slate-200">
+                            <p class="font-bold text-slate-900 text-base">Mr. Narciso C. Candiza</p>
+                            <p class="text-xs text-slate-600 mt-1 mb-2">Commission on Higher Education Regional Office VIII</p>
+                            <p class="text-amber-600 font-medium flex items-center gap-1 text-sm"><i data-lucide="phone" class="w-3 h-3"></i> 09272197892</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-slate-200">
+                            <p class="font-bold text-slate-900 text-base">Ptr. Gamaliel C. Gonzaga</p>
+                            <p class="text-xs text-slate-600 mt-1 mb-2">Church of the Foursquare Gospel of the Philippines - Tacloban City</p>
+                            <p class="text-amber-600 font-medium flex items-center gap-1 text-sm"><i data-lucide="phone" class="w-3 h-3"></i> 09271586386</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column (Wider) -->
+            <div class="w-full md:w-[65%] p-8 md:p-12 flex flex-col gap-10">
+                
+                <!-- Work Experience Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 section-header flex items-center gap-2">
+                        <i data-lucide="briefcase" class="w-6 h-6 text-amber-500"></i> Work Experience
+                    </h2>
+                    
+                    <div class="flex flex-col gap-6">
+                        <div class="page-break-inside-avoid group">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Graduate School Core Faculty / MSIT Coordinator</h3>
+                                <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full whitespace-nowrap mt-2 md:mt-0 border border-slate-200">Jun 2020 - Present</span>
+                            </div>
+                            <p class="text-slate-600 font-medium flex items-center gap-1"><i data-lucide="building" class="w-4 h-4"></i> Graduate School, Eastern Visayas State University</p>
+                        </div>
+
+                        <div class="page-break-inside-avoid group">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Head, BS in Information Technology Department</h3>
+                                <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full whitespace-nowrap mt-2 md:mt-0 border border-slate-200">Jun 2020 - Aug 2025</span>
+                            </div>
+                            <p class="text-slate-600 font-medium flex items-center gap-1"><i data-lucide="building" class="w-4 h-4"></i> College of Engineering, Eastern Visayas State University</p>
+                        </div>
+
+                        <div class="page-break-inside-avoid group">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Information Technology Officer</h3>
+                                <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full whitespace-nowrap mt-2 md:mt-0 border border-slate-200">Feb 2020 - Aug 2021</span>
+                            </div>
+                            <p class="text-slate-600 font-medium flex items-center gap-1"><i data-lucide="building" class="w-4 h-4"></i> Under the VP for Administration and Finance, Eastern Visayas State University</p>
+                        </div>
+
+                        <div class="page-break-inside-avoid group">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Head, Information Technology Department</h3>
+                                <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full whitespace-nowrap mt-2 md:mt-0 border border-slate-200">Jun 2014 - Aug 2016</span>
+                            </div>
+                            <p class="text-slate-600 font-medium flex items-center gap-1"><i data-lucide="building" class="w-4 h-4"></i> College of Engineering, Eastern Visayas State University</p>
+                        </div>
+
+                        <div class="page-break-inside-avoid group">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">IT Instructor</h3>
+                                <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full whitespace-nowrap mt-2 md:mt-0 border border-slate-200">Jul 2007 - Present</span>
+                            </div>
+                            <p class="text-slate-600 font-medium flex items-center gap-1"><i data-lucide="building" class="w-4 h-4"></i> College of Engineering, Eastern Visayas State University</p>
+                        </div>
+
+                        <div class="page-break-inside-avoid group">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Part-Time Lecturer</h3>
+                                <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full whitespace-nowrap mt-2 md:mt-0 border border-slate-200">Jun 2003 - Jun 2007</span>
+                            </div>
+                            <p class="text-slate-600 font-medium flex items-center gap-1"><i data-lucide="building" class="w-4 h-4"></i> College of Engineering, Eastern Visayas State University</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Trainings & Seminars -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 section-header flex items-center gap-2">
+                        <i data-lucide="mic" class="w-6 h-6 text-amber-500"></i> Trainings & Seminars Attended
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 gap-y-3 text-sm text-slate-800">
+                        
+                        <!-- 2026 -->
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Apr 15-16, 2026</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Turnitin—Instructor Workflow Training</span>
+                                <span class="text-slate-500 text-xs">Innovative Technology and Management Journal</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Mar 13, 2026</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2026 Annual Scientific Conference and 93rd General Membership Assembly</span>
+                                <span class="text-slate-500 text-xs">National Research Council of the Philippines</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Mar 9-11, 2026</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training on Data Science and Analytics</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | Department of Information and Communications Technology</span>
+                            </div>
+                        </div>
+
+                        <!-- 2025 -->
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Nov 12-13, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">8th International STEAM+ Research Congress 2025</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Evaluator (Technology Strand) | Philippine-American Academy of Science and Engineering</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 22-24, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">7th International Research Conference on Innovations in Engineering, Science, and Technology</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Panel Speaker | Batangas State University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 24-25, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2025 Eight International Conference on Vocational Education and Electrical Engineering</span>
+                                <span class="text-slate-500 text-xs">UNESA, IEEE | Universitas Negeri Surabaya, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 9-10, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Executive Briefing for Digital Leaders</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | Department of Information and Communications Technology</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 3-5, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2025 Publication Bootcamp From Proposal to Publication</span>
+                                <span class="text-slate-500 text-xs">Leyte Normal University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 2 - Oct 2, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">COIL Global Web Design: Bridging Cultures Through Digital Interfaces 2025</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Judge and Lecturer | Universiti Islam Indonesia, Davao Del Sur State College, EVSU</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jul 21 - Aug 1, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">CommTECH Camp Highlight 2025 - Stream 1: Innovations in Engineering</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Professor | Institut Teknologi Sepuluh Nopember, Surubaya, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Apr 28-30, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">15th ICT Roadshow of College of Computing Studies, Information and Communication Technology</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | Isabela State University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Apr 7-8, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training Workshop on the Preparation of Corrective/Preventive Action Report</span>
+                                <span class="text-slate-500 text-xs">University Quality Assurance and Accreditation Center</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Apr 3-4, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Qualitative Research Methodologies and Tools</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | Eastern Visayas State University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Mar 13, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">NRCP 2025 Annual Scientific Conference and 92nd General Membership Assembly</span>
+                                <span class="text-slate-500 text-xs">National Research Council of the Philippines</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Feb 17-22, 2025</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training Program for the COMELEC DESO Technical Support Personnel in Region VIII</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | Commission on Elections</span>
+                            </div>
+                        </div>
+
+                        <!-- 2024 & 2023 -->
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Nov 27-29, 2024</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training on Data Science and Analytics</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | Department of Information and Communications Technology</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Aug 8-20, 2024</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training of Trainers on Web Application Framework: Laravel</span>
+                                <span class="text-slate-500 text-xs">Department of Information and Communications Technology</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Feb 26 - Mar 1, 2024</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Future's Thinking: The Bending Reality Approach</span>
+                                <span class="text-slate-500 text-xs">Development Academy of the Philippines</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 27-28, 2023</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">5th International Conference on Automation, Mechatronics, and Robotics 2023</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Peer Reviewer | Mechatronics and Robotics Society of the Philippines</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 2-6, 2023</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training for Trainers on Data Science and Analytics Using R</span>
+                                <span class="text-slate-500 text-xs">Department of Information and Communications Technology – NCR</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 18-22, 2023</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training on Web Development for Web Developers – Batch 2</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Mar 23-25, 2023</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">PSITE 25th National Convention 2023</span>
+                                <span class="text-slate-500 text-xs">Philippine Society of Information Technology Educators</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Feb 17, 2023</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">COPC Monitoring and Evaluation on Abuyog Community College</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> RQAT Member | Commission on Higher Education - Region Office VIII</span>
+                            </div>
+                        </div>
+
+                        <!-- 2022 -->
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Dec 10-11, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2nd International Conference in Computing and Information Research</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Peer Reviewer, Technical Committee Member | National University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Nov 11 - Dec 2, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training of Trainers on Web Development for Web Developers</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | DICT - National Capital Region</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 26-28, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2nd National DABEST Students Research and Development Congress</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Panel Chair | EVSU, Department of Science and Technology</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 3-7, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training on Web Accessibility Audit – Batch 2</span>
+                                <span class="text-slate-500 text-xs">DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 19-30, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training on Web Development for Web Developers – Batch 1</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 12-16, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training of Trainers on Cybersecurity Competency Framework</span>
+                                <span class="text-slate-500 text-xs">DICT - Region VI</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 10-11, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2022 5th International Conference on Vocational Education and Electrical Engineering</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Presenter, Peer Reviewer | Universitas Negeri Surabaya, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Sep 8-9, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Machine Learning and Selected Classification Algorithms Training</span>
+                                <span class="text-slate-500 text-xs">Southern Leyte State University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Aug 30 – Sep 1, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">5th International STEAM 2022 Research Congress</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Judge – Technology Track | EVSU, DOST</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jun 13–24, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training of Trainers in Web Development for Web Developers</span>
+                                <span class="text-slate-500 text-xs">DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Apr 7-8, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Cyber Security Training for CDA Employees</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Trainor | Cooperative Development Authority - Region VIII</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Apr 5-6, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Training of the Board of Canvassers on General Instructions and CCS Operations</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> PBOC CCS Operator | Commission on Elections, Province of Leyte</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Mar 7 - Apr 18, 2022</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Cybersafe Practices Massive Open Online Course</span>
+                                <span class="text-slate-500 text-xs">DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+
+                        <!-- 2021 & 2020 & 2019 -->
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Dec 11-12, 2021</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">1st International Conference in Information and Computing Research</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Peer Reviewer, Technical Committee Member | National University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Nov 22-23, 2021</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Virtual Training on the Utilization of Technology-Based Innovations including ICT for Supervisors</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Person | Department of Education, Regional Office VIII</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 9-10, 2021</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2021 3rd International Conference on Research and Academic Community Services</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Presenter, Peer Reviewer | UNESA, IEEE, Universitas Negeri Surabaya</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Aug 16-17, 2021</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Webinar on “Peer Reviewers Using the Scopus and Thompson Reuters ISI Standards”</span>
+                                <span class="text-slate-500 text-xs">Asian Society of Teachers for Research Inc.</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jun 23-25, 2021</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">4th International Multidisciplinary Research Conference 2021</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Judge | Leyte Normal University</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jun 21-25, 2021</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">ICT Project Management Training for Trainers</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Participant | DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 3-4, 2020</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2020 3rd International Conference on Vocational Education and Electrical Engineering (ICVEE)</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Presenter, Peer Reviewer | UNESA, IEEE, Universitas Negeri Surabaya</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Aug 12, 2020</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Protecting Information Assets of Higher Education Against Malicious Attacks</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Resource Speaker | DICT - Visayas Cluster 2</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jul 3, 2020</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Webinar on “Tips on Paper Indexing: Scopus / WOS / ACI”</span>
+                                <span class="text-slate-500 text-xs">Institute of Computer Engineers of the Philippines, CHED</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jan 9-10, 2020</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">1ST International Research Conference in Computing, Engineering, Education, and Educational-Technology</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Presenter, Peer Reviewer, Session Chair | Bicol State University, Asia Technological School of Science and Arts</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline border-b border-slate-100 pb-3 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Oct 3-6, 2019</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2019 IEEE Eurasia Conference on IOT, Communication and Engineering (ECICE)</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Presenter | IEEE | Yunlin, Taiwan</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline pb-1 pt-1 page-break-inside-avoid hover:bg-slate-50 transition-colors -mx-2 px-2 rounded">
+                            <span class="w-36 font-bold text-amber-600 text-xs shrink-0 mb-1 md:mb-0">Jun 12-15, 2019</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">2019 IEEE 11th International Conference on Communication Software and Networks (ICCSN)</span>
+                                <span class="text-slate-500 text-xs"><span class="font-medium text-slate-700">Role:</span> Presenter | IEEE | Chongqing, China</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
